@@ -1,5 +1,7 @@
 document.querySelector('form').addEventListener('submit' , (e)=>{
   e.preventDefault();
+ document.querySelector('#message-form').classList.add('hide');
+ document.querySelector('#link-form').classList.remove('hide');
   const input= document.querySelector('#message-input')
   //console.log(input.value)
 const encrypted = btoa(input.value);
